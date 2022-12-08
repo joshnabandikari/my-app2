@@ -1,0 +1,36 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    width: 20%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+.left h4:hover{
+    background-color: blueviolet;
+    cursor: pointer;
+    color: brown;
+}
+.left h4{
+    margin: 0;
+    padding: 15px;
+}
+.right{
+    width: 80%;
+    height: 100%;
+    background-color: teal;
+}
+.logout-button{
+    margin-top: 50px;
+    padding: 10px;
+    width: 50%;
+    border-radius: 20%;
+}
+.logout-button:hover{
+    background-color: brown;
+}
