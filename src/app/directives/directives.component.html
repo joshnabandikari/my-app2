@@ -5,7 +5,7 @@
 <select name="" id="">
     <option *ngFor="let state of states">{{state}}</option>
 </select>
-<table  border="1">
+<table  border="1" class="table">
     <thead>
         <tr>
             <th>Name</th>
@@ -15,9 +15,9 @@
     </thead>
     <tbody>
         <tr *ngFor="let user of users">
-            <td>{{user.name}}</td>
-            <td>{{user.age}}</td>
-            <td>{{user.package}}</td>
+            <td>{{user.name | uppercase}}</td>
+            <td [ngClass]="{'green':user.age>0&&user.age<20,'yellow':user.age>20&&user.age<30,'red':user.age>30}">{{user.age}}</td>
+            <td [ngStyle]="{'background-color':user.package<10?'red':'green'}">{{user.package}}</td>
 
         </tr>
     </tbody>
@@ -27,3 +27,6 @@
 <h2 *ngIf="time>0&&time<12">GOOD MORNING</h2>
 <h2 *ngIf="time>13&&time<20">GOOD AFTERNOON</h2>
 <h2 *ngIf="time>20&&time<24">GOOD NIGHT</h2>
+<h2>{{today}}</h2>
+<h2>{{today | date: 'yyyy/dd/MM'}}</h2>
+<h2>{{today |date:'short'}}</h2>

@@ -10,12 +10,14 @@ export class DirectivesComponent {
   public states:string[]=['AndhraPradesh','Telangana','TamilNadu','kerala']
 
   public users:any =[
-    {name:'Anil',age:20,package:10},
-    {name:'Anil2',age:21,package:11},
-    {name:'Anil3',age:22,package:12},
-    {name:'Anil4',age:23,package:13},
+    {name:'Anil',age:10,package:9},
+    {name:'ram',age:21,package:11},
+    {name:'pavan',age:22,package:12},
+    {name:'kiran',age:33,package:13},
     
   ];
   public time:number=14;
+  public today:any=new Date();
+
 
 }
