@@ -1,0 +1,29 @@
+<p>directives works!</p>
+<ol>
+    <li *ngFor="let name of names">{{name}}</li>
+</ol>
+<select name="" id="">
+    <option *ngFor="let state of states">{{state}}</option>
+</select>
+<table  border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Package</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.name}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.package}}</td>
+
+        </tr>
+    </tbody>
+
+</table>
+
+<h2 *ngIf="time>0&&time<12">GOOD MORNING</h2>
+<h2 *ngIf="time>13&&time<20">GOOD AFTERNOON</h2>
+<h2 *ngIf="time>20&&time<24">GOOD NIGHT</h2>
