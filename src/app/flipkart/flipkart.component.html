@@ -1,0 +1,27 @@
+<button (click)="sort()">Sortbyname</button>
+
+<table border="1" class="table table-hover">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Rating</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        
+            <tbody>
+                <tr *ngFor="let product of products">
+                    <td>{{product.name| uppercase}}</td>   
+                    <td>{{product.price}}</td>
+                    <td>{{product.quantity}}</td>
+                    <td [ngClass]="{'red':product.rating<3,'green':product.rating>=3}">{{product.rating}}</td>
+                </tr>
+
+            </tbody>
+        
+    
+
+</table>

@@ -13,6 +13,8 @@ import { FormsModule } from '@angular/forms';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { TestComponent } from './test/test.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { GpayComponent } from './gpay/gpay.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { DirectivesComponent } from './directives/directives.component';
     DataBindingComponent,
     RectangleComponent,
     TestComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    GpayComponent,
+    FlipkartComponent
   ],
   imports: [
     BrowserModule,
