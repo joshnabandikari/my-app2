@@ -1,0 +1,28 @@
+<table border="1" class="table table-hover">
+    <thead>
+        <tr>
+            <th>createdAt</th>
+            <th>account_name</th>
+            <th>available_balance</th>
+            <th>currency</th>
+            <th>userimage</th>
+        
+            <th>id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bankaccount of bankaccounts">
+            <td>{{bankaccount.createdAt}}</td>
+            <td>{{bankaccount.account_name}}</td>
+            <td>{{bankaccount.available_balance}}</td>
+            <td>{{bankaccount.currency}}</td>
+            <td>
+                <img src="{{bankaccount.userimage" alt="" width="20px" height="20px">
+            </td>
+            
+            <td>{{bankaccount.id}}</td>
+
+        </tr>
+    </tbody>
+
+</table>

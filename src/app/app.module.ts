@@ -15,6 +15,9 @@ import { TestComponent } from './test/test.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { GpayComponent } from './gpay/gpay.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { HttpClientModule } from "@angular/common/http";
+import { BankComponent } from './bank/bank.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +32,15 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
     TestComponent,
     DirectivesComponent,
     GpayComponent,
-    FlipkartComponent
+    FlipkartComponent,
+    VehicleComponent,
+    BankComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
