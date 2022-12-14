@@ -1,0 +1,25 @@
+div{
+    border: 2px solid gray;
+}
+
+.visited{
+
+    color: green;
+
+    
+
+}
+
+*{
+    
+    background-color: aliceblue;
+}
+
+*:hover{
+    cursor: pointer;
+    background-color: grey;
+
+}
+.unvisited{
+    color:rgb(213, 124, 124)
+}
