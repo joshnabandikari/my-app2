@@ -5,6 +5,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { FlipkartAppComponent } from './flipkart-app/flipkart-app.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { GpayComponent } from './gpay/gpay.component';
 import { HomeComponent } from './home/home.component';
@@ -23,7 +24,8 @@ const routes: Routes = [
 {path:'gpay',component:GpayComponent},
 {path:'flipkart',component:FlipkartComponent},
 {path:'vehicle',component:VehicleComponent},
-{path:'bank',component:BankComponent}
+{path:'bank',component:BankComponent},
+{path:'flipkart-app',component:FlipkartAppComponent}
   
 ]},
   {path:'',component:LoginComponent},

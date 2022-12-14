@@ -18,6 +18,7 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { HttpClientModule } from "@angular/common/http";
 import { BankComponent } from './bank/bank.component';
+import { FlipkartAppComponent } from './flipkart-app/flipkart-app.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { BankComponent } from './bank/bank.component';
     GpayComponent,
     FlipkartComponent,
     VehicleComponent,
-    BankComponent
+    BankComponent,
+    FlipkartAppComponent
   ],
   imports: [
     BrowserModule,
