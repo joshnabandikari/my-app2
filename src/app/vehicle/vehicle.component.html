@@ -1,3 +1,17 @@
+               
+               
+<input type="text" [(ngModel)]="term">
+<button (click)="filter()">filter</button>
+<select [(ngModel)]="column">
+    <option value="color">color</option>
+    <option value="model">model</option>
+    <option value="type">type</option>
+</select>
+<select [(ngModel)]="order">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+</select>
+<button (click)="sort()">sort</button>
 <table border="1" class="table table-hover">
     <thead> 
         <tr>
@@ -9,6 +23,7 @@
             <th>color</th>
             <th>image</th>
             <th>id</th>
+            <th>actions</th>
         </tr>
     </thead>
     <tbody>
@@ -23,8 +38,19 @@
                 <img src="{{vehicle.image}}" alt="" width="20px" Height="20px">
             </td>
             <td>{{vehicle.id}}</td>
+            <td>
+                <button (click)="delete(vehicle.id)">delete</button>
+            </td>
+    
 
         </tr>
     </tbody>
 
 </table>
+<ul class="pagination">
+    
+    <li  (click)="page(1)" class="page-item"><a class="page-link">1</a></li>
+    <li (click)="page(2)" class="page-item"><a class="page-link">2</a></li>
+    <li (click)="page(3)" class="page-item"><a class="page-link">3</a></li>
+    
+  </ul>
