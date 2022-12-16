@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { BankComponent } from './bank/bank.component';
 import { BoredomComponent } from './boredom/boredom.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -29,7 +30,8 @@ const routes: Routes = [
 {path:'bank',component:BankComponent},
 {path:'flipkart-app',component:FlipkartAppComponent},
 {path:'mail',component:MailComponent},
-{path:'boredom',component:BoredomComponent}
+{path:'boredom',component:BoredomComponent},
+{path:'create-vehicle',component:CreateVehicleComponent}
   
 ]},
   {path:'',component:LoginComponent},

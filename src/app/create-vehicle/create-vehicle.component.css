@@ -1,0 +1,16 @@
+*{
+    margin: 10px;
+}
+.submit{
+    background-color:red ;
+    color: black;
+    border-radius: 10px;
+}
+submit:hover{
+    cursor: pointer;
+}
+label{
+    display:inline-block;
+    width: 130px;
+    border-radius: 10px;
+}
