@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthenticationGuard } from './authentication.guard';
 import { BankComponent } from './bank/bank.component';
 import { BoredomComponent } from './boredom/boredom.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
@@ -17,9 +19,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 
+
 const routes: Routes = [
   {path:'login',component:LoginComponent},
-  {path:'dashboard',component:DashboardComponent ,children:[{path:'home',component:HomeComponent},
+  {path:'dashboard',component:DashboardComponent , canActivate:[AuthenticationGuard],children:[{path:'home',component:HomeComponent},
 {path:'calculator',component:CalculatorComponent},
 {path:'rectangle',component:RectangleComponent},
 {path:'directives',component:DirectivesComponent},
@@ -31,7 +34,8 @@ const routes: Routes = [
 {path:'flipkart-app',component:FlipkartAppComponent},
 {path:'mail',component:MailComponent},
 {path:'boredom',component:BoredomComponent},
-{path:'create-vehicle',component:CreateVehicleComponent}
+{path:'create-vehicle',component:CreateVehicleComponent},
+{path:'create-student',component:CreateStudentComponent}
   
 ]},
   {path:'',component:LoginComponent},
