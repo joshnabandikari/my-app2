@@ -23,6 +23,7 @@ import { MailComponent } from './mail/mail.component';
 import { BoredomComponent } from './boredom/boredom.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { CreateStudentComponent } from './create-student/create-student.componen
     MailComponent,
     BoredomComponent,
     CreateVehicleComponent,
-    CreateStudentComponent
+    CreateStudentComponent,
+    CreateEmployeeComponent
   ],
   imports: [
     BrowserModule,

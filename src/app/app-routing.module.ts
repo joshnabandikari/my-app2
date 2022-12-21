@@ -4,6 +4,7 @@ import { AuthenticationGuard } from './authentication.guard';
 import { BankComponent } from './bank/bank.component';
 import { BoredomComponent } from './boredom/boredom.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { CreateStudentComponent } from './create-student/create-student.component';
 import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -35,7 +36,8 @@ const routes: Routes = [
 {path:'mail',component:MailComponent},
 {path:'boredom',component:BoredomComponent},
 {path:'create-vehicle',component:CreateVehicleComponent},
-{path:'create-student',component:CreateStudentComponent}
+{path:'create-student',component:CreateStudentComponent},
+{path:'create-employee',component:CreateEmployeeComponent}
   
 ]},
   {path:'',component:LoginComponent},
