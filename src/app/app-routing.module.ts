@@ -16,6 +16,7 @@ import { GpayComponent } from './gpay/gpay.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { MailComponent } from './mail/mail.component';
+import { NotifyGuard } from './notify.guard';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
@@ -36,7 +37,7 @@ const routes: Routes = [
 {path:'mail',component:MailComponent},
 {path:'boredom',component:BoredomComponent},
 {path:'create-vehicle',component:CreateVehicleComponent},
-{path:'create-student',component:CreateStudentComponent},
+{path:'create-student',component:CreateStudentComponent, canDeactivate:[NotifyGuard]},
 {path:'create-employee',component:CreateEmployeeComponent}
   
 ]},
